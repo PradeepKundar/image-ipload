@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0 auto;
+      }
+      form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Welcome to home page</h1> -->
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="profileImage" />
+      <input type="file" name="coverImage" />
+      <input type="file" name="resume" />
+
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
